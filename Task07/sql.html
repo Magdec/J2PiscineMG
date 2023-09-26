@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Coding Pedia</title>
+        <link rel="stylesheet" href="codingpedia.css">
+    </head>
+    <body>
+        <header class="box">
+            <h1>Welcome to CodingPedia</h1>
+            <nav class="box">
+                <a href="index.html" id="index">Index</a>
+                <a href="php.html" id="PHP">PHP</a>
+                <a href="sql.html" id="SQL">SQL</a>
+            </nav>
+        </header>
+        <div class="texte">
+            <main class="box">
+                <article><abbr title="PHP">Structured Query Language (SQL) is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS). It is particularly useful in handling structured data, i.e., data incorporating relations among entities and variables.</abbr></article>
+                <article>
+                    <table>
+                        <caption>Course Planning</caption>
+                        <thead>
+                            <th>Subject</th>
+                            <th>Decription</th>
+                            <th>Grade Obtained</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>SQL 101</td>
+                                <td>A quick introduction to the SQL language</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>SQL join</td>
+                                <td>Discovery of JOIN to combine rows from multiple tables</td>
+                                <td>13</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+                <article>
+                    <li>
+                        <ul>// Je commente le SQL.</ul>
+                        <ul>// Mais pour l'instant je n'ai pas encore commencé le SQL donc ... NADA</ul>
+                    </li>
+                </article>
+                <article>
+                    <code>
+                        select no, niveau, surface, <br>
+                        case when surface <= 50 then 'Petit' <br>
+                            when surface > 50 and surface <= 100 then 'Moyen' <br>
+                            else 'Grand' <br>
+                        end as categorie <br>
+                        from Appart <br>
+                    </code>
+                </article>
+            </main>
+            <aside class="box">
+                <q>
+                    La paix est un mensonge, il n'y a que la passion. <br>
+                    Par la passion, j'ai la puissance. <br>
+                    Par la puissance, j'ai le pouvoir. <br>
+                    Par le pouvoir, j'ai la victoire. <br>
+                    Par la victoire, je brise mes chaines. <br>
+                    La Force me libérera.
+                </q>
+            </aside>
+        </div>
+        <footer class="box">
+            <address>
+                Maël Gargadennec <br>
+                06.43.69.97.63 <br>
+                15A Rue Desaix <br>
+                35000 Rennes
+            </address>
+        </footer>
+    </body>
+</html>

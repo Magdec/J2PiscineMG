@@ -1,0 +1,69 @@
+body{
+    background-color: grey;
+}
+
+.box {
+border: 2px black solid;
+margin: 10px;
+padding-left: 10px;
+padding-right: 10px;
+background-color: white;
+}
+
+.texte {
+    display: flex;
+    flex-direction: row;
+    flex: 5;
+}
+
+div main {
+    flex : 4
+}
+
+div aside {
+    flex : 1
+}
+
+header {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+.moving_square{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: absolute;
+    animation-name: moving_square;
+    animation-direction: normal;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+}
+
+@keyframes moving_square{
+    from{
+        background-color: red;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    25%{
+        background-color: green;
+        margin-top: 300px;
+        margin-left: 0px;
+    }
+    50%{
+        background-color: blue;
+        margin-left: 300px;
+        margin-top: 300px;
+    }
+    75%{
+        background-color: yellow;
+        margin-left: 300px;
+        margin-top: 0px;
+    }
+    to{
+        background-color: red;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+}
